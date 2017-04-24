@@ -1,0 +1,66 @@
+﻿@model WebApplication2.Models.Inventario
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Inventario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Red)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Red)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Green)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Green)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Blue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Blue)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.InventarioID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
