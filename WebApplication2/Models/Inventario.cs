@@ -11,8 +11,7 @@ namespace WebApplication2.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public int Quantity { get; set; }
-        public byte Red { get; set; }
-        public bool Green { get; set; }
-        public Boolean Blue { get; set; }
+        public float size { get; set; }
+
     }
 }

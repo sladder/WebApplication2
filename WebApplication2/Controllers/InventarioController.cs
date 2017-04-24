@@ -46,7 +46,7 @@ namespace WebApplication2.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "InventarioID,Name,Description,Quantity,Red,Green,Blue")] Inventario inventario)
+        public ActionResult Create([Bind(Include = "InventarioID,Name,Description,Quantity,size")] Inventario inventario)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace WebApplication2.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "InventarioID,Name,Description,Quantity,Red,Green,Blue")] Inventario inventario)
+        public ActionResult Edit([Bind(Include = "InventarioID,Name,Description,Quantity,size")] Inventario inventario)
         {
             if (ModelState.IsValid)
             {
